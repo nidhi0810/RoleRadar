@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Finder</title>
+</head>
+
+<body>
+
+    <h1>Job Finder</h1>
+    <div id="login-section">
+        <h2>Login</h2>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+        />
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        />
+
+        <button id="login-button">
+            Login
+        </button>
+
+        <p id="login-status"></p>
+    </div>
+
+    <div id="whatsapp-section" style="display: none;">
+        <div id="status">Connecting to WhatsApp...</div>
+
+        <div id="qr-container"></div>
+            
+        <div id="channels-section" style="display: none;">
+            <h2>Select WhatsApp Channels</h2>
+
+            <div id="channels-container"></div>
+
+            <button id="save-channels">Continue</button>
+        </div>
+    </div>
+
+    
+    <script src="./renderer.js"></script>
+
+</body>
+</html>
